@@ -3,26 +3,28 @@ import { Link } from 'react-router-dom';
 
 export const Login = () => {
   return (
-    <div className="container max-w-md mx-auto mt-16 md:mt-16 h-2">
-            <h2 className="text-center text-3xl font-semibold">Welcome Back</h2>
-            <p className="text-center text-sm font-semibold mt-4 mb-10">Please enter your details</p>
-            <div className="flex space-y-2 flex-col">
-                <label htmlFor="email" className="font-semibold text-sm">Email</label>
-                <input type="email" className="w-full p-2 rounded-md border border-gray-400 placeholder:text-sm outline-cs-green" name="email" placeholder="Enter your email" />
+    <div className="container h-2 max-w-md mx-auto mt-16 md:mt-16">
+            <h2 className="text-3xl font-semibold text-center">Welcome Back</h2>
+            <p className="mt-4 mb-10 text-sm font-semibold text-center">Please enter your details</p>
+            <div className="flex flex-col space-y-2">
+                <label htmlFor="email" className="text-sm font-semibold">Email</label>
+                <input type="email" className="w-full p-2 border border-gray-400 rounded-md placeholder:text-sm outline-cs-green" name="email" placeholder="Enter your email" />
             </div>
 
-            <div className="flex my-5 space-y-2 flex-col">
-                <label htmlFor="password" className="font-semibold text-sm">Password</label>
-                <input type="password" className="w-full p-2 rounded-md border border-gray-400 placeholder:text-sm outline-cs-green" name="password" placeholder="Enter your password" />
+            <div className="flex flex-col my-5 space-y-2">
+                <label htmlFor="password" className="text-sm font-semibold">Password</label>
+                <input type="password" className="w-full p-2 border border-gray-400 rounded-md placeholder:text-sm outline-cs-green" name="password" placeholder="Enter your password" />
             </div>
-
-            <button className="bg-cs-light-green w-full mt-4 hover:bg-cs-green rounded-md text-white font-semibold text-sm p-3">Sign In</button>
-            <button className="text-cs-light-green w-full mt-4 flex items-center justify-center space-x-3 p-3 rounded-md font-semibold border border-cs-green text-sm">
+            <div className='my-2 text-cs-light-green hover:text-cs-green'>
+              <a href="/reset" className='text-xs font-semibold'>Forgot password ?</a>
+            </div>
+            <button className="w-full p-3 mt-4 text-sm font-semibold text-white rounded-md bg-cs-light-green hover:bg-cs-green">Sign In</button>
+            <button className="flex items-center justify-center w-full p-3 mt-4 space-x-3 text-sm font-semibold border rounded-md text-cs-light-green border-cs-green">
                 <img src={google} alt="google" className='w-5' />
                 <span>Sign In With Google</span>
             </button>
         
-            <p className="text-sm text-center mt-6">
+            <p className="mt-6 text-sm text-center">
                 Don't have an account? <Link to={"/register"} className="font-semibold text-cs-light-green" >Sign Up</Link>
             </p>
                 
