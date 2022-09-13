@@ -16,7 +16,7 @@ export const Login = () => {
                 <input type="password" className="w-full p-2 border border-gray-400 rounded-md placeholder:text-sm outline-cs-green" name="password" placeholder="Enter your password" />
             </div>
             <div className='my-2 text-cs-light-green hover:text-cs-green'>
-              <a href="/reset" className='text-xs font-semibold'>Forgot password ?</a>
+              <Link to="/reset" className='text-xs font-semibold'>Forgot password ?</Link>
             </div>
             <button className="w-full p-3 mt-4 text-sm font-semibold text-white rounded-md bg-cs-light-green hover:bg-cs-green">Sign In</button>
             <button className="flex items-center justify-center w-full p-3 mt-4 space-x-3 text-sm font-semibold border rounded-md text-cs-light-green border-cs-green">
