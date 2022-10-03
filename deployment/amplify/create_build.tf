@@ -10,7 +10,6 @@ resource "aws_amplify_app" "files-app" {
         preBuild:
           commands:
             - npm install
-            - npm test -- --watchAll=false
         build:
           commands:
             - npm run build
