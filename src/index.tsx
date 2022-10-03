@@ -4,7 +4,7 @@ import './assets/css/index.css';
 import App from './App';
 
 
-export const SERVER_URL = 'https://files-api-server.herokuapp.com';
+export const SERVER_URL = 'http://localhost:80';
 
 
 const root = ReactDOM.createRoot(
